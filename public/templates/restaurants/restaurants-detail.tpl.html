@@ -1,0 +1,15 @@
+<h3>Dettaglio ristorante</h3>
+
+<div ng-show="restaurant">
+     <div class="text-info">NOME: <b>{{restaurant.name}}</b></div>
+     <div class="text-info">UFFICIO: <b>{{restaurant.borough}}</b></div>
+     <div class="text-info">VIA: <b>{{restaurant.address.street}} n.{{restaurant.address.building}}</b></div>
+     <div class="text-info">CODICE POSTALE: <b>{{restaurant.address.zipcode}}</b></div>
+     <div class="text-info">CUCINA: <b>{{restaurant.cuisine}}</b></div>
+     <div class="text-info">IDENTIFICATIVO: <b>{{restaurant.restaurant_id}}</b></div>
+</div>
+<div ng-show="error">
+ {{error.simple}} {{error.detailed}}
+</div>
+<br>
+<a href="#/restaurants/">Torna alla lista</a>

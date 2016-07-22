@@ -1,0 +1,13 @@
+<h3>Lista di ristoranti</h3>
+
+<div ng-show="restaurants">
+ <ul class="list-group">
+     <li class="list-group-item" ng-repeat="restaurant in restaurants | orderBy:'borough' | limitTo: 10"">
+     	<a href="#/restaurants/{{restaurant._id}}">{{restaurant.name}}</a>
+        <span class="badge">{{restaurant.borough}}</span>
+     </li>
+ </ul>
+</div>
+<div ng-show="error">
+ {{error.simple}} {{error.detailed}}
+</div>

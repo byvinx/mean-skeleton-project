@@ -1,0 +1,30 @@
+{"development":{
+    "code":"mean",
+    "descr":"Example Application Mean Stack",
+    "env":"mongo",
+    "db":{
+        "host":"localhost",
+        "port": 27017,
+        "name":"test",
+        "username":"",
+        "password":""
+    },
+    "httpStatus":{"UNAUTHORIZED":401, "BAD_REQUEST":400, "ERROR":500, "GET_OK": 200, "POST_OK": 201, "PUT_OK": 200, "DELETE_OK": 204, "GET_KO": 404, "POST_KO": 500, "PUT_KO": 500, "DELETE_KO": 500},
+    "httpPort":3000,
+    "session":{
+      "userSessionName":"user",	
+      "sessionOptions":{
+    	  "name": "mean-skeleton-project",
+    	  "secret": "my express secret",
+    	  "saveUninitialized": true,
+    	  "resave": true
+      },
+	  "fileStoreOptions": {"path":"./sessions"}
+	},
+	"log":{
+		"logAccessFile":"/logs/access.log",
+		"level": "silly",
+		"filename":"./logs/app.log"
+	},
+	"staticResource":{"maxAge": 0}
+}}
