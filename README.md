@@ -1,1 +1,1 @@
-# mean-skeleton-project
+# mean-skeleton-project - Simple Skeleton og project based on Mongo Express NodeJs
